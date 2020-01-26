@@ -11,3 +11,4 @@ class ngo(models.Model):
     email=models.CharField(max_length = 50)
     phone = models.BigIntegerField()
     website = models.CharField(max_length = 250)
+    stats  = models.ImageField(upload_to = 'images/')

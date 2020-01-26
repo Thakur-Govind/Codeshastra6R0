@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import ngo.views
-
+from django.conf import settings
+from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', ngo.views.home, name = 'ngohome'),
     path('<int:ng_id>', ngo.views.ngo_det, name = 'ngodetails'),
-]
+    path('donate/<int:ng_id>', ngo.views.donate, name = 'ngodonate'),
+    path('donate/thankyou/<int:ng_id>',ngo.views.thankyou  ,name = 'thankyou'),
+
+] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)

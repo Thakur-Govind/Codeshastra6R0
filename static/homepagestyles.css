@@ -1,0 +1,32 @@
+body {
+    width: 100%;
+}
+.container-fluid {
+    padding: 0;
+}
+
+.serviceNameJumbo {
+    display: block;
+    margin: auto;
+}
+
+.serviceName, .serviceDescp {
+    text-align: center;
+}
+
+.loginForm {
+    padding-left: 20px;
+}
+
+.jumbotron {
+    background-image: linear-gradient(-90deg, #8c8c8c, #f2f2f2);
+}
+
+.loginInput {
+    width: 100%;  
+}
+
+.signupLink {
+    color: #262626;
+    text-decoration: underline;
+}

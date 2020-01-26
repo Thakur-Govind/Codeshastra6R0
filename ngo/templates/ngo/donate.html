@@ -1,0 +1,15 @@
+<h2> Donate for a good cause!!</h2>
+<br>
+<br>
+<h2>{{ngo.name}}
+<form action  = "thankyou/{{ngo.ng_id}}" method = "POST">
+{% csrf_token %}
+Receipt Address: <br>
+<input type = "text" name = "email">
+<br><br>
+Donation amount: <br>
+<input type = "text" name = "don">
+<br>
+<br>
+<button type = "submit"> Donate! </button>
+</form>

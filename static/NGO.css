@@ -1,0 +1,8 @@
+.btn-donate {
+    background-color: #ea3c17;
+    margin-left: 220px;
+    margin-top: 20px;
+    opacity: .8;
+}
+
+.btn-donate:hover{opacity: 1}
