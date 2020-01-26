@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<h1> Available NGOZZZZ</h1>
+{% for model in ngos.all %}
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <a href = #>
+              <img class="card-img-top" src="{{ model.image.url }}" />
+              <div class="card-body">
+                </a>
+                Name of NGO:<a href =  "/{{model.ng_id}}" }> {{model.name}}</a>
+                <br><br>
+                Location: {{model.location}}
+                <br><br>
+                Phone: {{model.phone}}
+                <br><br>
+                Email:{{model.email}}
+                <br><br>
+
+                --------------------------------------
+                <p class="card-text"><strong>{{ model.name }}</strong></p>
+
+              </div>
+            </div>
+          </div>
+          {% endfor %}}
